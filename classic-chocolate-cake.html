@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Classic Chocolate Cake | Store</title>
+</head>
+<style>
+
+</style>
+
+<body>
+  <!-- Header starts here -->
+  <div id="navbar" class="shadow"></div>
+  <!-- Header ends here -->
+
+  <!-- Product section starts here -->
+  <section class="product-container">
+    <div class="container">
+      <div class="row product-page">
+        <div class="col-md-6">
+          <div class="product-image shadow">
+            <img src="images/product-image-10.jpg" data-toggle="modal" data-target="#productModal" alt="birthday-cake">
+
+            <!-- Modal -->
+            <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="close ml-auto" data-dismiss="modal"
+                        aria-label="Close">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="images/product-image-10.jpg" class="img-fluid" alt="birthday-cake">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- image modal -->
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="product-details">
+            <div class="breadcrumbs">
+              <a href="index.html">Home</a>
+              &nbsp;/&nbsp;
+              <a href="store.html">Store</a>
+              &nbsp;/&nbsp;
+              <a href="classic-chocolate-cake.html">Classic Chocolate Cake</a>
+            </div>
+            <div class="product-data">
+              <h2>Classic Chocolate Cake</h2>
+              <p>
+                For a festive occasion, few treats can match the celebratory spirit of a classic birthday cake and this
+                is the only one you’ll ever need.
+              </p>
+              <div class="reviews-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>
+                  18 reviews
+                </span>
+              </div>
+              <h4 class="product-price">
+                $<span id="cakePrice">48.90</span>
+              </h4>
+              <div class="product-quantity">
+                <button class="btn-left" id="btnMinus" onclick="decrement()">&minus;</button>
+                <input type="text" id="txtQty" value="1">
+                <button class="btn-right" id="btnPlus" onclick="increment()">&plus;</button>
+              </div>
+              <div class="button-group mt-5">
+                <a href="checkout.html" class="btn-solid">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Product section ends here -->
+
+  <!-- Footer starts here -->
+  <div id="footer"></div>
+  <!-- Footer ends here -->
+
+
+  <!-- Product Quantity file -->
+  <script src="js/product-quantity.js"></script>
+  <!-- Navbar file -->
+  <script src="templates/navbar.js"></script>
+  <!-- Footer file -->
+  <script src="templates/footer.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

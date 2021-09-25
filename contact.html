@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Us | The Cake Shop</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <!-- Header starts here -->
+    <header class="mb-5">
+        <div id="navbar">
+        </div>
+        <div class="container" id="contact-info">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h1 class="hero-heading">Contact Us!</h1>
+                    <p class="hero-para">
+                        Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on
+                        business days. We will be happy to answer your questions.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="images/contact_us.svg" class="img-fluid img-hero" alt="header-image-cake">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- contact starts here -->
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-12">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong><i class="fas fa-exclamation-triangle"></i>&nbsp;Warning!</strong>
+                    Due to the high level of customization involved with each cake, we are unable to take cake orders
+                    online. We ask at least 24 hours for custom cake orders and 48-72 hours for Saturday and holiday
+                    orders.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="section-contactform">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="contact-card">
+                    <a href="#map-address">
+                        <i class="fas fa-globe"></i>
+                        <h4>Our Address:</h4>
+                        <h5 class="cake-card-title">Model Colony 75100, Malir, Karachi</h5>
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <a href="tel:+987 654 32135">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Our Phone:</h4>
+                        <h5 class="cake-card-title">+987 654 32135</h5>
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <a href="mailto:info@thecakeshop.com">
+                        <i class="fas fa-phone"></i>
+                        <h4>Out Mailbox:</h4>
+                        <h5 class="cake-card-title">info@thecakeshop.com</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-8 col-sm-12 contact-form">
+                <div class="contact-text">
+                    <h3>Drop us a Message</h3>
+                    <p>
+                        Your email address will not be published.
+                    </p>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Your Name</label>
+                        <input type="text" class="textbox" required pattern="^(\w\w+)\s(\w+)$" title="Enter your first name and after space enter your last name" placeholder="Enter full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email Address</label>
+                        <input type="email" required class="textbox" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Message</label>
+                        <textarea class="textbox" required  placeholder="Enter a message..." rows="7"></textarea>
+                    </div>
+                    <button type="submit" class="btn-solid btn-block shadow">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- contact ends here -->
+
+
+    <!-- map starts here -->
+    <section>
+        <div class="contact-map" id="map-address">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14475.615911207313!2d67.18100257061236!3d24.90125675751699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb337623ec7436f%3A0x48231685184fd3f2!2sModel%20Colony%20Malir%20Cantonment%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1629306194424!5m2!1sen!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <!-- map ends here -->
+
+
+    <!-- Footer starts here -->
+    <div id="footer" class="mt-5">
+    </div>
+    <!-- Footer ends here -->
+
+    <!-- Navbar file -->
+    <script src="templates/navbar.js"></script>
+    <!-- Footer file -->
+    <script src="templates/footer.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

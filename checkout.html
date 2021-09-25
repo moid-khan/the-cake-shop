@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Checkout | The Cake Shop</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <!-- Header starts here -->
+    <header class="mb-5">
+        <div id="navbar">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h1 class="hero-heading">Checkout!</h1>
+                    <p class="hero-para">
+                        Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on
+                        business days. We will be happy to answer your questions.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img src="images/checkout.svg" class="w-75 img-hero" alt="header-image-cake">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header ends here -->
+
+
+
+
+    <!-- contact starts here -->
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-12">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong><i class="fas fa-exclamation-triangle"></i>&nbsp;Warning!</strong>
+                    Due to the high level of customization involved with each cake, we are unable to take cake orders
+                    online. We ask at least 24 hours for custom cake orders and 48-72 hours for Saturday and holiday
+                    orders.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8  col-lg-8 col-sm-12 contact-form">
+                <div class="contact-text">
+                    <h3>Billing details</h3>
+                    <p>
+                        Your email address will not be published.
+                    </p>
+                </div>
+                <form action="#" onsubmit="return validation()">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Your Name</label>
+                        <input type="text" class="textbox" id="fullname" placeholder="Enter full name">
+                        <span id="error-fullname" class="text-danger font-weight-bold"> </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Contact Number</label>
+                        <input type="text" class="textbox" id="phone" placeholder="Enter contact number">
+                        <span id="error-phone" class="text-danger font-weight-bold"> </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Address</label>
+                        <input type="text" class="textbox" id="address" placeholder="Enter address">
+                        <span id="error-address" class="text-danger font-weight-bold"> </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Item Name</label>
+                        <input type="text" class="textbox" id="item-name" placeholder="Enter item name">
+                        <span id="error-item-name" class="text-danger font-weight-bold"> </span>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Quantity</label>
+                        <input type="number" class="textbox" id="quantity" placeholder="Enter quantity">
+                        <span id="error-quantity" class="text-danger font-weight-bold"> </span>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Delivery Addres</label>
+                        <input type="text" class="textbox" id="delivery-address" placeholder="Enter delivery address">
+                        <span id="error-delivery-address" class="text-danger font-weight-bold"> </span>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Delivery Date</label>
+                        <input type="date" class="textbox" id="date">
+                        <span id="error-date" class="text-danger font-weight-bold"> </span>
+
+                    </div>
+                    <button type="submit" class="btn-solid shadow mb-3">Place Order</button>
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
+                <h3 class="order-heading">Your Order</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Birthday Cake</td>
+                            <td>$35.95</td>
+                        </tr>
+                        <tr>
+                            <th>Subtotal</th>
+                            <td>$35.95</td>
+                        </tr>
+                        <tr class="total-row">
+                            <th>Total</th>
+                            <td class="total-amount">$35.95</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- contact ends here -->
+
+    <!-- Footer starts here -->
+    <div id="footer" class="mt-5">
+    </div>
+    <!-- Footer ends here -->
+
+    <!-- Validation file -->
+    <script src="js/validation.js"></script>
+    <!-- Navbar file -->
+    <script src="templates/navbar.js"></script>
+    <!-- Footer file -->
+    <script src="templates/footer.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
